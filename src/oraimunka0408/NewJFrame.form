@@ -138,43 +138,49 @@
             <Property name="text" type="java.lang.String" value="Menu"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem2">
+            <MenuItem class="javax.swing.JMenuItem" name="jszorzas">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Szorz&#xe1;s"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem2ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jszorzasActionPerformed"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem3">
+            <MenuItem class="javax.swing.JMenuItem" name="jOsztas">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Oszt&#xe1;s"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem3ActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jOsztasActionPerformed"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem4">
+            <MenuItem class="javax.swing.JMenuItem" name="jOsszeadas">
               <Properties>
                 <Property name="text" type="java.lang.String" value="&#xd6;sszead&#xe1;s"/>
               </Properties>
             </MenuItem>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem5">
+            <MenuItem class="javax.swing.JMenuItem" name="jkivonas">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Kivon&#xe1;s"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jkivonasActionPerformed"/>
+              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>
-        <Menu class="javax.swing.JMenu" name="jMenu7">
+        <Menu class="javax.swing.JMenu" name="jFile">
           <Properties>
             <Property name="text" type="java.lang.String" value="File"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="jMenuItem6">
+            <MenuItem class="javax.swing.JMenuItem" name="jujfeladat">
               <Properties>
                 <Property name="text" type="java.lang.String" value="&#xda;j feladat"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jujfeladatActionPerformed"/>
+              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>
@@ -208,7 +214,7 @@
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace pref="21" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                  <Component id="jPanel7" max="32767" attributes="0"/>
+                  <Component id="jstatisztikaipanel" max="32767" attributes="0"/>
                   <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="jLabel5" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Component id="jScrollPane3" alignment="0" pref="483" max="32767" attributes="0"/>
@@ -251,7 +257,7 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="lbMegoldas" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jPanel7" min="-2" max="-2" attributes="0"/>
+              <Component id="jstatisztikaipanel" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
       </Group>
@@ -348,7 +354,7 @@
         </DimensionLayout>
       </Layout>
     </Container>
-    <Container class="javax.swing.JPanel" name="jPanel7">
+    <Container class="javax.swing.JPanel" name="jstatisztikaipanel">
 
       <Layout>
         <DimensionLayout dim="0">
@@ -358,22 +364,22 @@
                   <Group type="103" groupAlignment="1" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jLabel3" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jprobalkozasszama" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jeredmeny" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="1" attributes="0">
-                              <Component id="jLabel7" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
-                              <Component id="jLabel6" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
-                              <Component id="jLabel8" alignment="0" min="-2" pref="44" max="-2" attributes="0"/>
+                              <Component id="jeredmenymegoldas" alignment="0" min="-2" pref="42" max="-2" attributes="0"/>
+                              <Component id="jkerdesekszamamegoldas" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
+                              <Component id="jprobalkozasokszamamegoldas" alignment="0" min="-2" pref="44" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                      <Component id="jkerdesekszama" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
               <Group type="102" alignment="0" attributes="0">
-                  <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                  <Component id="jstatisztika" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -381,21 +387,21 @@
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <Component id="jLabel9" min="-2" max="-2" attributes="0"/>
+                  <Component id="jstatisztika" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel8" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
+                      <Component id="jprobalkozasszama" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jprobalkozasokszamamegoldas" alignment="3" min="-2" pref="25" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="62" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel7" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
+                      <Component id="jeredmeny" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jeredmenymegoldas" alignment="3" min="-2" pref="21" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="67" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="jLabel6" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                      <Component id="jkerdesekszama" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jkerdesekszamamegoldas" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
               </Group>
@@ -403,37 +409,37 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JLabel" name="jLabel6">
+        <Component class="javax.swing.JLabel" name="jkerdesekszamamegoldas">
           <Properties>
             <Property name="text" type="java.lang.String" value="jLabel6"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel7">
+        <Component class="javax.swing.JLabel" name="jeredmenymegoldas">
           <Properties>
             <Property name="text" type="java.lang.String" value="jLabel7"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel8">
+        <Component class="javax.swing.JLabel" name="jprobalkozasokszamamegoldas">
           <Properties>
             <Property name="text" type="java.lang.String" value="jLabel8"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel1">
+        <Component class="javax.swing.JLabel" name="jkerdesekszama">
           <Properties>
             <Property name="text" type="java.lang.String" value="K&#xe9;rd&#xe9;sek sz&#xe1;ma:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel2">
+        <Component class="javax.swing.JLabel" name="jprobalkozasszama">
           <Properties>
             <Property name="text" type="java.lang.String" value="Pr&#xf3;b&#xe1;lkoz&#xe1;sok sz&#xe1;ma:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel3">
+        <Component class="javax.swing.JLabel" name="jeredmeny">
           <Properties>
             <Property name="text" type="java.lang.String" value="El&#xe9;rt eredm&#xe9;ny:"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel9">
+        <Component class="javax.swing.JLabel" name="jstatisztika">
           <Properties>
             <Property name="text" type="java.lang.String" value="Statisztika"/>
           </Properties>

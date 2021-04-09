@@ -5,6 +5,8 @@
  */
 package oraimunka0408;
 
+import java.util.Random;
+
 /**
  *
  * @author kalac
@@ -54,22 +56,22 @@ public class NewJFrame extends javax.swing.JFrame {
         lbVisszajelzes = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
-        jPanel7 = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
+        jstatisztikaipanel = new javax.swing.JPanel();
+        jkerdesekszamamegoldas = new javax.swing.JLabel();
+        jeredmenymegoldas = new javax.swing.JLabel();
+        jprobalkozasokszamamegoldas = new javax.swing.JLabel();
+        jkerdesekszama = new javax.swing.JLabel();
+        jprobalkozasszama = new javax.swing.JLabel();
+        jeredmeny = new javax.swing.JLabel();
+        jstatisztika = new javax.swing.JLabel();
         jMenuBar2 = new javax.swing.JMenuBar();
         jMenu = new javax.swing.JMenu();
-        jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
-        jMenuItem4 = new javax.swing.JMenuItem();
-        jMenuItem5 = new javax.swing.JMenuItem();
-        jMenu7 = new javax.swing.JMenu();
-        jMenuItem6 = new javax.swing.JMenuItem();
+        jszorzas = new javax.swing.JMenuItem();
+        jOsztas = new javax.swing.JMenuItem();
+        jOsszeadas = new javax.swing.JMenuItem();
+        jkivonas = new javax.swing.JMenuItem();
+        jFile = new javax.swing.JMenu();
+        jujfeladat = new javax.swing.JMenuItem();
 
         jMenuItem1.setText("jMenuItem1");
 
@@ -187,93 +189,103 @@ public class NewJFrame extends javax.swing.JFrame {
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
-        jLabel6.setText("jLabel6");
+        jkerdesekszamamegoldas.setText("jLabel6");
 
-        jLabel7.setText("jLabel7");
+        jeredmenymegoldas.setText("jLabel7");
 
-        jLabel8.setText("jLabel8");
+        jprobalkozasokszamamegoldas.setText("jLabel8");
 
-        jLabel1.setText("Kérdések száma:");
+        jkerdesekszama.setText("Kérdések száma:");
 
-        jLabel2.setText("Próbálkozások száma:");
+        jprobalkozasszama.setText("Próbálkozások száma:");
 
-        jLabel3.setText("Elért eredmény:");
+        jeredmeny.setText("Elért eredmény:");
 
-        jLabel9.setText("Statisztika");
+        jstatisztika.setText("Statisztika");
 
-        javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
-        jPanel7.setLayout(jPanel7Layout);
-        jPanel7Layout.setHorizontalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel7Layout.createSequentialGroup()
+        javax.swing.GroupLayout jstatisztikaipanelLayout = new javax.swing.GroupLayout(jstatisztikaipanel);
+        jstatisztikaipanel.setLayout(jstatisztikaipanelLayout);
+        jstatisztikaipanelLayout.setHorizontalGroup(
+            jstatisztikaipanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jstatisztikaipanelLayout.createSequentialGroup()
                 .addGap(16, 16, 16)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel7Layout.createSequentialGroup()
-                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel3))
+                .addGroup(jstatisztikaipanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jstatisztikaipanelLayout.createSequentialGroup()
+                        .addGroup(jstatisztikaipanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jprobalkozasszama)
+                            .addComponent(jeredmeny))
                         .addGap(49, 49, 49)
-                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.LEADING))
+                        .addGroup(jstatisztikaipanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jeredmenymegoldas, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jkerdesekszamamegoldas, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jprobalkozasokszamamegoldas, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jkerdesekszama, javax.swing.GroupLayout.Alignment.LEADING))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel7Layout.createSequentialGroup()
-                .addComponent(jLabel9)
+            .addGroup(jstatisztikaipanelLayout.createSequentialGroup()
+                .addComponent(jstatisztika)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
-        jPanel7Layout.setVerticalGroup(
-            jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel7Layout.createSequentialGroup()
-                .addComponent(jLabel9)
+        jstatisztikaipanelLayout.setVerticalGroup(
+            jstatisztikaipanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jstatisztikaipanelLayout.createSequentialGroup()
+                .addComponent(jstatisztika)
                 .addGap(26, 26, 26)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jstatisztikaipanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jprobalkozasszama)
+                    .addComponent(jprobalkozasokszamamegoldas, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(62, 62, 62)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jstatisztikaipanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jeredmeny)
+                    .addComponent(jeredmenymegoldas, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jstatisztikaipanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jkerdesekszama)
+                    .addComponent(jkerdesekszamamegoldas, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(33, 33, 33))
         );
 
         jMenu.setText("Menu");
 
-        jMenuItem2.setText("Szorzás");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
+        jszorzas.setText("Szorzás");
+        jszorzas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2ActionPerformed(evt);
+                jszorzasActionPerformed(evt);
             }
         });
-        jMenu.add(jMenuItem2);
+        jMenu.add(jszorzas);
 
-        jMenuItem3.setText("Osztás");
-        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+        jOsztas.setText("Osztás");
+        jOsztas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem3ActionPerformed(evt);
+                jOsztasActionPerformed(evt);
             }
         });
-        jMenu.add(jMenuItem3);
+        jMenu.add(jOsztas);
 
-        jMenuItem4.setText("Összeadás");
-        jMenu.add(jMenuItem4);
+        jOsszeadas.setText("Összeadás");
+        jMenu.add(jOsszeadas);
 
-        jMenuItem5.setText("Kivonás");
-        jMenu.add(jMenuItem5);
+        jkivonas.setText("Kivonás");
+        jkivonas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jkivonasActionPerformed(evt);
+            }
+        });
+        jMenu.add(jkivonas);
 
         jMenuBar2.add(jMenu);
 
-        jMenu7.setText("File");
+        jFile.setText("File");
 
-        jMenuItem6.setText("Új feladat");
-        jMenu7.add(jMenuItem6);
+        jujfeladat.setText("Új feladat");
+        jujfeladat.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jujfeladatActionPerformed(evt);
+            }
+        });
+        jFile.add(jujfeladat);
 
-        jMenuBar2.add(jMenu7);
+        jMenuBar2.add(jFile);
 
         setJMenuBar(jMenuBar2);
 
@@ -284,7 +296,7 @@ public class NewJFrame extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(21, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jstatisztikaipanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 483, Short.MAX_VALUE)
@@ -321,16 +333,29 @@ public class NewJFrame extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lbMegoldas)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jstatisztikaipanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
-        jKerdes.setText("8/1");
-    }//GEN-LAST:event_jMenuItem3ActionPerformed
+    private void jOsztasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jOsztasActionPerformed
+        Random rnd = new Random();
+        Random rnd2 = new Random();
+        int szam =rnd.nextInt((100-1)+1)+1;
+        int szam2= rnd2.nextInt((100-1)+1)+1;
+           int osztas = szam % szam2;
+         jKerdes.setText(szam +"/"+ szam2);
+         
+    
+        
+         
+        
+        
+        
+  
+    }//GEN-LAST:event_jOsztasActionPerformed
 
     private void jMegoldasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMegoldasActionPerformed
         lbMegoldas.setText("8");
@@ -340,9 +365,17 @@ public class NewJFrame extends javax.swing.JFrame {
         lbVisszajelzes.setText("helyes!");
     }//GEN-LAST:event_jellenorzesActionPerformed
 
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+    private void jszorzasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jszorzasActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
+    }//GEN-LAST:event_jszorzasActionPerformed
+
+    private void jkivonasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jkivonasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jkivonasActionPerformed
+
+    private void jujfeladatActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jujfeladatActionPerformed
+     
+    }//GEN-LAST:event_jujfeladatActionPerformed
 
     /**
      * @param args the command line arguments
@@ -380,16 +413,10 @@ public class NewJFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu jFile;
     private javax.swing.JTextField jKerdes;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JButton jMegoldas;
     private javax.swing.JMenu jMenu;
     private javax.swing.JMenu jMenu1;
@@ -398,29 +425,35 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu4;
     private javax.swing.JMenu jMenu5;
     private javax.swing.JMenu jMenu6;
-    private javax.swing.JMenu jMenu7;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuBar jMenuBar2;
     private javax.swing.JMenuBar jMenuBar3;
     private javax.swing.JMenuBar jMenuBar4;
     private javax.swing.JMenuItem jMenuItem1;
-    private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
-    private javax.swing.JMenuItem jMenuItem5;
-    private javax.swing.JMenuItem jMenuItem6;
+    private javax.swing.JMenuItem jOsszeadas;
+    private javax.swing.JMenuItem jOsztas;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
-    private javax.swing.JPanel jPanel7;
     private javax.swing.JPopupMenu jPopupMenu1;
     private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextArea jValasz;
     private javax.swing.JButton jellenorzes;
+    private javax.swing.JLabel jeredmeny;
+    private javax.swing.JLabel jeredmenymegoldas;
+    private javax.swing.JLabel jkerdesekszama;
+    private javax.swing.JLabel jkerdesekszamamegoldas;
+    private javax.swing.JMenuItem jkivonas;
+    private javax.swing.JLabel jprobalkozasokszamamegoldas;
+    private javax.swing.JLabel jprobalkozasszama;
+    private javax.swing.JLabel jstatisztika;
+    private javax.swing.JPanel jstatisztikaipanel;
+    private javax.swing.JMenuItem jszorzas;
+    private javax.swing.JMenuItem jujfeladat;
     private javax.swing.JButton jujra;
     private javax.swing.JLabel lbMegoldas;
     private javax.swing.JLabel lbVisszajelzes;
